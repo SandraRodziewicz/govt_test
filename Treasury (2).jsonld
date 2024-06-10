@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP108:body",
+      "@context": {
+        "references": {
+          "@id": "CIP108:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP108:referenceHash",
+              "@context": {
+                "hashDigest": "CIP108:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "motivation": "CIP108:motivation",
+        "rationale": "CIP108:rationale"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "abstract": {
+      "@value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum semper turpis eget porta. Quisque placerat erat eu risus ultricies maximus. Nullam rutrum leo a nisl tempor tempor. Donec eget ante nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam bibendum vel mauris sed sollicitudin."
+    },
+    "motivation": {
+      "@value": "Vivamus sagittis tempus viverra. Curabitur fringilla libero sed quam tempus, vitae vulputate diam porttitor. Suspendisse risus ipsum, feugiat eu maximus non, luctus quis lorem. Donec dictum sagittis commodo.\n\nSed ullamcorper tortor at ante cursus placerat. Praesent ut dapibus augue, ut mattis justo. Phasellus id quam vel nibh dignissim convallis. Fusce gravida ex lorem, non eleifend ante vulputate vel."
+    },
+    "rationale": {
+      "@value": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, quam vitae rhoncus dapibus, massa ante pellentesque nunc, at congue nisi nulla a neque. Duis gravida, nisi vel lobortis mattis, odio sem bibendum lorem, sed gravida nulla metus a ante. Donec et leo arcu. Praesent quis nisl sit amet lacus egestas lobortis vel sit amet magna. Duis posuere tellus sit amet libero porttitor gravida."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Label"
+        },
+        "uri": {
+          "@value": "https://google.com"
+        }
+      }
+    ],
+    "title": {
+      "@value": "Treasury test"
+    }
+  }
+}
